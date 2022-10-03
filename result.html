@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Templates/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    </head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark b" id="navbar" style="background-color:  blueviolet;">
+        <div class="container-fluid">
+            <h6 style=" color: aliceblue; font-family: 'Karla', sans-serif; ">SEDAC</h6>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Estadisticas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<br>
+<form action="">
+
+    <div class="col-7 form-group mb-4 container-fluid  row">
+        <div class="row">
+            <div class="col">
+                <label class="fw-bold" for="nombre">Nombre</label>
+                <input name="name" id="nombre" required
+                       class="form-control"/>
+                <div class="invalid-feedback">
+                    Campo obligatorio
+                </div>
+            </div>
+            <div class="col">
+                <label class="fw-bold" for="escuela">Escuela</label>
+                <input name="escuela" id="escuela" required
+                       class="form-control" type="text"/>
+                <div class="invalid-feedback">
+                    Campo obligatorio
+                </div>
+            </div>
+        </div></div>
+
+    <div class="container-fluid row">
+        <div class="col-12">
+            <div class="card">
+                <div style="background-color: indigo ;" class="card-header">
+                    <div class="row">
+                        <div class="col-6" style="color: aliceblue;">Septiembre 2022</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <table class="table table-sm table-hover datatable">
+                        <thead >
+                        <th>Caracteristica</th>
+                        <th>Mala</th>
+                        <th>Regular</th>
+                        <th>Buena</th>
+                        <th>Muy buena</th>
+                        <th>Excelente</th>
+                        </thead>
+                        <tbody>
+                            
+                        
+                    </table>
+                    
+                </div>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <button type="submit" class="btn btn-primary btn-sm col-3">Finalizar</button>
+                  </div> <br><br><br>
+            </div>
+        </div>
+    </div>
+    
+</form>
+    <script src="Templates/js/popper.min.js"></script>
+    <script src="Templates/js/bootstrap.min.js">
+    </script>
+</body>
+</html>
