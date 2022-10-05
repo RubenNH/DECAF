@@ -1,0 +1,46 @@
+DROP DATABASE IF EXISTS DACEF;
+CREATE DATABASE DACEF;
+use DACEF;
+
+-- -----------------------------------------------------
+-- Table Encuestas
+-- -----------------------------------------------------
+CREATE TABLE  Encuestas (
+  idEncusta bigint NOT NULL auto_increment,
+  NomEncuestas VARCHAR(45) NULL,
+  OpenE bigint default 1,
+  PRIMARY KEY (idEncusta))
+;
+
+CREATE TABLE  Respuesta (
+  idRespuesta bigint NOT NULL auto_increment,
+  Cliente VARCHAR(45) NOT NULL,
+  Escuela VARCHAR(45) NOT NULL,
+  Funcionalidad bigint NULL,
+  Confiabilidad bigint NULL,
+  Usabilidad bigint NULL,
+  Rendiimiento bigint NULL,
+  Mantenimiento bigint NULL,
+  Portabilidad bigint NULL,
+  Seguridad bigint NULL,
+  Compatibilidad bigint NULL,
+  Total bigint NULL,
+  Porcentaje double null,
+  Fk_Encuestas bigint not null,
+  PRIMARY KEY (idRespuesta),
+  CONSTRAINT fk_Respuesta_Encuestas
+    FOREIGN KEY (Fk_Encuestas)
+    REFERENCES Encuestas (idEncusta))
+;
+create or replace view recentEncuesta as select * from Encuestas order by idEncusta desc limit 1;
+create or replace view recentEva as select * from Respuesta order by idRespuesta desc limit 1;
+create or replace view merequetenge as select * from Encuestas join Respuesta on Encuestas.idEncusta = Respuesta.Fk_Encuestas;
+
+insert into Encuestas (NomEncuestas) values('SEPTIEMBRE 2022');
+
+select * from Respuesta;
+select * from Encuestas;
+select * from recentEncuesta;
+select * from recentEva;
+select * from merequetenge;
+
