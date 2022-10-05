@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark b" id="navbar" style="background-color:  blueviolet;">
         <div class="container-fluid">
-            <h6 style=" color: aliceblue; font-family: 'Karla', sans-serif; ">SEDAC</h6>
+            <h6 style=" color: aliceblue; font-family: 'Karla', sans-serif; ">SADEC</h6>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,7 +68,7 @@
                                     <label class="btn btn-outline-danger funcionalidad" for="f1">Mala</label></td>
                                 <td><input type="radio" class="btn-check" name="funcionalidad" id="f2" value="2">
                                     <label class="btn btn-outline-dark" for="f2">Regular</label></td>
-                                <td><input type="radio" class="btn-check" name="funcionalidad" id="f3" value="3" checked>
+                                <td><input type="radio" class="btn-check" name="funcionalidad" id="f3" value="3">
                                     <label class="btn btn-outline-warning" for="f3">Buena</label></td>
                                 <td><input type="radio" class="btn-check" name="funcionalidad" id="f4" value="4">
                                     <label class="btn btn-outline-success" for="f4">Muy buena</label></td>
@@ -81,7 +81,7 @@
                                     <label class="btn btn-outline-danger" for="c1">Mala</label></td>
                                 <td><input type="radio" class="btn-check" name="confiabilidad" id="c2" value="2">
                                     <label class="btn btn-outline-dark" for="c2">Regular</label></td>
-                                <td><input type="radio" class="btn-check" name="confiabilidad" id="c3" value="3" checked>
+                                <td><input type="radio" class="btn-check" name="confiabilidad" id="c3" value="3">
                                     <label class="btn btn-outline-warning" for="c3">Buena</label></td>
                                 <td><input type="radio" class="btn-check" name="confiabilidad" id="c4" value="4">
                                     <label class="btn btn-outline-success" for="c4">Muy buena</label></td>
@@ -120,7 +120,7 @@
                                     <label class="btn btn-outline-danger" for="m1">Mala</label></td>
                                 <td><input type="radio" class="btn-check" name="mantenimiento" id="m2" value="2">
                                     <label class="btn btn-outline-dark"   for="m2">Regular</label></td>
-                                <td><input type="radio" class="btn-check" name="mantenimiento" id="m3" value="3" checked>
+                                <td><input type="radio" class="btn-check" name="mantenimiento" id="m3" value="3">
                                     <label class="btn btn-outline-warning" for="m3">Buena</label></td>
                                 <td><input type="radio" class="btn-check" name="mantenimiento" id="m4" value="4">
                                     <label class="btn btn-outline-success" for="m4">Muy buena</label></td>
@@ -133,7 +133,7 @@
                                     <label class="btn btn-outline-danger" for="p1">Mala</label></td>
                                 <td><input type="radio" class="btn-check" name="portabilidad" id="p2" value="2">
                                     <label class="btn btn-outline-dark" for="p2">Regular</label></td>
-                                <td><input type="radio" class="btn-check" name="portabilidad" id="p3" value="3" checked>
+                                <td><input type="radio" class="btn-check" name="portabilidad" id="p3" value="3">
                                     <label class="btn btn-outline-warning" for="p3">Buena</label></td>
                                 <td><input type="radio" class="btn-check" name="portabilidad" id="p4" value="4">
                                     <label class="btn btn-outline-success" for="p4">Muy buena</label></td>
@@ -146,7 +146,7 @@
                                     <label class="btn btn-outline-danger" for="s1">Mala</label></td>
                                 <td><input type="radio" class="btn-check" name="seguridad" id="s2" value="2">
                                     <label class="btn btn-outline-dark" for="s2">Regular</label></td>
-                                <td><input type="radio" class="btn-check" name="seguridad" id="s3" value="3" checked>
+                                <td><input type="radio" class="btn-check" name="seguridad" id="s3" value="3">
                                     <label class="btn btn-outline-warning" for="s3">Buena</label></td>
                                 <td><input type="radio" class="btn-check" name="seguridad" id="s4" value="4">
                                     <label class="btn btn-outline-success" for="s4">Muy buena</label></td>
@@ -159,7 +159,7 @@
                                     <label class="btn btn-outline-danger" for="co1">Mala</label></td>
                                 <td><input type="radio" class="btn-check" name="compatibilidad" id="co2" value="2">
                                     <label class="btn btn-outline-dark" for="co2">Regular</label></td>
-                                <td><input type="radio" class="btn-check" name="compatibilidad" id="co3" value="3" checked>
+                                <td><input type="radio" class="btn-check" name="compatibilidad" id="co3" value="3">
                                     <label class="btn btn-outline-warning" for="co3">Buena</label></td>
                                 <td><input type="radio" class="btn-check" name="compatibilidad" id="co4" value="4">
                                     <label class="btn btn-outline-success" for="co4">Muy buena</label></td>
