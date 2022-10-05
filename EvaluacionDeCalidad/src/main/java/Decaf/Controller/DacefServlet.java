@@ -52,21 +52,33 @@ public class DacefServlet extends HttpServlet  {
 
                 float total = ((funcionalidad + Confiabilidad + Usabilidad + Rendimiento + Mantenimiento + Portabilidad + Seguridad + Compatibilidad) * 100 )/40;
                 Bean add = new Bean();
+/*para solucionar problema not conected device, no porcces debugable, rebust
+log cat en vista, que sive para seleccionar que emulador y aplicacion esta en ejecucion
 
-                add.setUser(name);
-                add.setSchool(escuela);
-                add.setFuncionalidad(funcionalidad);
-                add.setConfiabilidad(Confiabilidad);
-                add.setUsabilidad(Usabilidad);
-                add.setRendimiento(Rendimiento);
-                add.setMantenimiento(Mantenimiento);
-                add.setPortabilidadmpT(Portabilidad);
-                add.setSeguridad(Seguridad);
-                add.setCompatibilidad(Compatibilidad);
-                add.setPorcentaje(total);
-                add.setFkEncuesta(datosEnc.getFkEncuesta());
-                dao.saveEvaluacion(add);
-                urlRedirect = "/get-porc";
+*/
+                if(name.isEmpty() && escuela.isEmpty()){
+                    System.out.println("chaliying");
+                    urlRedirect = "/";
+                }else{
+                    if(total > 0){
+                        add.setUser(name);
+                        add.setSchool(escuela);
+                        add.setFuncionalidad(funcionalidad);
+                        add.setConfiabilidad(Confiabilidad);
+                        add.setUsabilidad(Usabilidad);
+                        add.setRendimiento(Rendimiento);
+                        add.setMantenimiento(Mantenimiento);
+                        add.setPortabilidadmpT(Portabilidad);
+                        add.setSeguridad(Seguridad);
+                        add.setCompatibilidad(Compatibilidad);
+                        add.setPorcentaje(total);
+                        add.setFkEncuesta(datosEnc.getFkEncuesta());
+                        dao.saveEvaluacion(add);
+                        urlRedirect = "/get-porc";
+                    }else{
+                        urlRedirect = "/";
+                    }
+                }
                 break;
             default:
                 urlRedirect = "/";

@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>SADEC</title>
 <link rel="stylesheet" href="Templates/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Templates/css/main.css">
     </head>

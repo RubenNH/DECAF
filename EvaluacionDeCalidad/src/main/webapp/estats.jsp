@@ -5,14 +5,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>JSP - Hello World</title>
+    <title>SADEC</title>
     <link rel="stylesheet" href="Templates/css/bootstrap.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="Templates/css/main.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-sm navbar-dark b" id="navbar" style="background-color:  blueviolet;">
     <div class="container-fluid">
-        <h6 style=" color: aliceblue; font-family: 'Karla', sans-serif; ">SEDAC</h6>
+        <h6 style=" color: aliceblue; font-family: 'Karla', sans-serif; ">SADEC</h6>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
